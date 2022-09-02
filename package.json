@@ -1,6 +1,6 @@
 {
   "name": "ui-utils-pack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JS Helper Functions",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -8,7 +8,9 @@
     ".": "./lib/"
   },
   "type": "module",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/eisgroup/ui-utils-pack",
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
     "functions"
   ],
   "scripts": {
-    "build": "mkdir lib && cp -R src/ lib/",
+    "build": "npm run clear && mkdir lib && cp -R src/ lib/",
     "clear": "rm -R lib",
     "release": "npm run build && npm publish && npm run clear"
   },
