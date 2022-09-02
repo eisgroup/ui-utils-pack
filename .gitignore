@@ -4,6 +4,7 @@
 # Ignore linked file
 babel.config.js
 /dist
+/lib
 /**/public/static/**/*.css
 /unity
 repos/server/uploads
